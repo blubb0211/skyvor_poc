@@ -586,8 +586,8 @@ body {
     overflow-x: auto;
     margin: 0;
     padding: 0;
-    zoom: 0.9;
     /*
+    zoom: 0.9;
     -moz-transform: scale(0.9);
     -moz-transform-origin: 0 0;
     -o-transform: scale(0.9);
