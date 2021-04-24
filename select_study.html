@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SkyvorMed Medical Device Data Capture Cloud</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="cover_screen_dropdown" id="cover_screen_dropdown" onclick="toggle_dropdown();"></div>
+	<header>
+		<nav class="top_nav">
+            <div class="nav_left">
+                <span class="nav_left_span">Select a study & Site</span>
+            </div>
+            <div class="nav_right">
+                <span class="nav_right_span"><div class="nav_name" onclick="toggle_dropdown();">John Doe <font style="font-style:italic; font-weight: normal;">(Study manager)</font></div></span>
+            </div>
+		</nav>
+        <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
+        <span class="nav_dropdown_span">Study Manager</span>
+        <span class="nav_dropdown_span">Data Manager</span>
+        <span class="nav_dropdown_span">System Administrator</span>
+        <span class="nav_dropdown_span">Principal Investigator</span>
+        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <span class="nav_dropdown_span_inactive">No pending notifications</span>
+        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <span class="nav_dropdown_span">Settings</span>
+        <span class="nav_dropdown_span">Help</span>
+        <span class="nav_dropdown_span"><a href="login.html">Logout</a></span>
+        </div>
+	</header>
+	<main>
+        <div class="main_div">
+            <div class="main_div_cell">
+                <img src="cloud.png" style="width:400px"><br>
+                <div class="login_window">
+                    <div class="login_top">
+                        Select study & site
+                    </div>
+                    <div class="login_main">
+                        <div class="login_main_cell">
+                            <form action="overview.html" method="POST">
+                                <span class="select_study_span" style="font-weight:bold;">Welcome back, John!</span>
+                                <span class="select_study_span">Please select:</span>
+                                <div class="custom-select">
+                                    <select name="study">
+                                        <option>Select a study...</option>
+                                        <option>STD00001</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="custom-select">
+                                    <select name="site">
+                                        <option>Select a site...</option>
+                                        <option>SITE00001</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <input class="login_submit" type="submit" name="submit" value="Proceed">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+               </div>
+        </div>
+    </main>
+	<footer>
+		<p>Copyright 2021 KaivorMed</p>
+	</footer>
+
+</body>
+
+</html>
+

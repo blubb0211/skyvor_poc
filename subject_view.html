@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SkyvorMed Medical Device Data Capture Cloud</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="cover_screen_dropdown" id="cover_screen_dropdown" onclick="toggle_dropdown();"></div>
+	<header>
+		<nav class="top_nav">
+            <div class="nav_left">
+                <span class="nav_left_span">
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:20px;margin-top:5px"></div>
+                        <select name="study">
+                            <option value="STD00001">STD00001</option>
+                        </select>
+                    </div>
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:20px;margin-top:5px"></div>
+                        <select name="site">
+                            <option value="STD00001">SITE00001</option>
+                        </select>
+                    </div>
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:20px;margin-top:5px"></div>
+                        <select name="subject">
+                            <option>0000001</option>
+                        </select>
+                    </div>
+                </span>
+            </div>
+            <div class="nav_right">
+                <span class="nav_right_span"><div class="nav_name" onclick="toggle_dropdown();">John Doe <font style="font-style:italic; font-weight: normal;">(Study manager)</font></div></span>
+            </div>
+		</nav>
+        <nav class="nav2">
+            <div class="nav2_left">
+                <a href="overview.html" class="home_link">
+                    <font style="font-size:30pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:30pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
+                    <font style="font-size:13pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
+                </a>
+            </div>
+            <div class="nav2_right">
+                <span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
+            </div>
+        </nav>
+        <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
+        <span class="nav_dropdown_span">Study Manager</span>
+        <span class="nav_dropdown_span">Data Manager</span>
+        <span class="nav_dropdown_span">System Administrator</span>
+        <span class="nav_dropdown_span">Principal Investigator</span>
+        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <span class="nav_dropdown_span_inactive">No pending notifications</span>
+        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <span class="nav_dropdown_span">Settings</span>
+        <span class="nav_dropdown_span">Help</span>
+        <span class="nav_dropdown_span"><a href="login.html">Logout</a></span>
+        </div>
+	</header>
+	<main>
+        <div class="main_div2">
+            <div class="main_div_cell_padding_left">
+            </div>
+            <div class="main_div_cell_left" id="main_div_cell_left">
+                    <span class="left_header"><font style="font-weight:bold;">Subject: </font>0000001</span>
+                    <div style="width:100%; height:1px; position:relative; display:block; background-color:#CACACA; margin-bottom:15px;"></div>
+                    <span class="left_nav">
+                        <div class="straight_line"></div>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_1" onclick="expand_collapse_item('sub_1','expand_1');" style="cursor:pointer;">+</div>Screening</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_1">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_2" onclick="expand_collapse_item('sub_2','expand_2');" style="cursor:pointer;">+</div>Device monitoring</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_2">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Cardiac measurements</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Sleep tracking</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Body measurements</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Activity measurements</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Health monitoring</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_3" onclick="expand_collapse_item('sub_3','expand_3');" style="cursor:pointer;">+</div>Visit 1</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_3">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_4" onclick="expand_collapse_item('sub_4','expand_4');" style="cursor:pointer;">+</div>Visit 2</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_4">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_5" onclick="expand_collapse_item('sub_5','expand_5');" style="cursor:pointer;">+</div>Visit 3</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_5">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_6" onclick="expand_collapse_item('sub_6','expand_6');" style="cursor:pointer;">+</div>End</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_6">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                        </span>
+                    </span>
+                <div class="minimizer" onclick="toggle_minimizer();">
+                &#9664;
+                </div>
+            </div>
+            <div class="main_div_cell_right" id="main_div_cell_right">
+                <header class="main_header">
+                    <span class="main_header_line_1">Subject</span>
+                    <span class="main_header_line_2">0000001</span>
+                    <div style="width:100%; height:1px; position:relative; display:block; background-color:black; margin-bottom:0px;"></div>
+                </header>
+                <input type="text" name="keywordFilter" placeholder="Keyword filter"><br>
+                <table class="overview_table">
+                    <tr>
+                        <th>Subject</th><th>Screening</th><th>Device Monitoring</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
+                    </tr>
+                    <tr>
+                        <td>Visit date</td><td><font class="font_tick">✓</font></td><td rowspan=100><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Demographics</td><td><font class="font_tick">✓</font></td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Medical history</td><td><font class="font_tick">✓</font></td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Physical examination</td><td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Vital signs</td><td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Inclusion / Exclusion</td><td><font class="font_tick">✓</font></td><td><font class="font_cross">✗</font></td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+                <div class="maximizer" id="maximizer" onclick="toggle_maximizer();">
+                &#9654;
+                </div>
+            </div>
+        </div>
+    </main>
+
+	<footer>
+		<p>Copyright 2021 KaivorMed</p>
+	</footer>
+
+</body>
+
+</html>
+
