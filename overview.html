@@ -20,12 +20,21 @@
                         <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:20px;margin-top:5px"></div>
                         <select name="study">
                             <option value="STD00001">STD00001</option>
+                            <option value="STD00001">STD00002</option>
+                            <option value="STD00001">STD00003</option>
+                            <option value="STD00001">STD00004</option>
                         </select>
                     </div>
                     <div class="nav-select">
                         <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:20px;margin-top:5px"></div>
                         <select name="site">
+                            <option value="STD00001">All sites</option>
                             <option value="STD00001">SITE00001</option>
+                            <option value="STD00001">SITE00002</option>
+                            <option value="STD00001">SITE00003</option>
+                            <option value="STD00001">SITE00004</option>
+                            <option value="STD00001">SITE00005</option>
+                            <option value="STD00001">SITE00006</option>
                         </select>
                     </div>
                     <div class="nav-select">
@@ -33,6 +42,10 @@
                         <select name="subject">
                             <option>Select subjects...</option>
                             <option>0000001</option>
+                            <option>0000002</option>
+                            <option>0000003</option>
+                            <option>0000004</option>
+                            <option>0000005</option>
                         </select>
                     </div>
                 </span>
@@ -53,11 +66,6 @@
             </div>
         </nav>
         <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
-        <span class="nav_dropdown_span">Study Manager</span>
-        <span class="nav_dropdown_span">Data Manager</span>
-        <span class="nav_dropdown_span">System Administrator</span>
-        <span class="nav_dropdown_span">Principal Investigator</span>
-        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
         <span class="nav_dropdown_span_inactive">No pending notifications</span>
         <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
         <span class="nav_dropdown_span">Settings</span>
@@ -76,25 +84,25 @@
                 <input type="text" name="keywordFilter" placeholder="Keyword filter"><br>
                 <table class="overview_table">
                     <tr>
-                        <th>Subject</th><th>Status</th><th>Device Monitoring</th><th>Screening</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
+                        <th>Site</th><th>Subject</th><th>Status</th><th>Device Monitoring</th><th>Screening</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
                     </tr>
                     <tr>
-                        <td><a href="subject_view.html">0000001</a></td><td>Screening</td><td><font class="font_cross">✗</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td><a href="subject_view.html">0000001</a></td><td>Screening</td><td><font class="font_cross">✗</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td>0000002</td><td>Screening</td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td>0000002</td><td>Screening</td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td>0000003</td><td>Screening</td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td>0000003</td><td>Screening</td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td>0000004</td><td>Randomized</td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td>0000004</td><td>Randomized</td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td>0000005</td><td>End of study</td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td>0000005</td><td>End of study</td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td>0000006</td><td>Withdraw</td><td><font class="font_cross">✗</font></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>SITE00001</td><td>0000006</td><td>Withdraw</td><td><font class="font_cross">✗</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                 </table>
             </div>
