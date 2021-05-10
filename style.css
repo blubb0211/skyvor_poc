@@ -225,8 +225,13 @@
     box-sizing:border-box;
     /*padding-right:30px;*/
 }
-.nav2_links, .nav2_links a {
-    margin-left:100px;
+.nav2_links {
+    margin-left:50px;
+    font-weight:bold;
+    color:#FCFCFC;
+    font-size:16pt;
+}
+.nav2_links a {
     font-weight:bold;
     color:#FCFCFC;
     font-size:16pt;
