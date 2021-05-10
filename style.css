@@ -517,6 +517,10 @@ table, td, th {
     vertical-align: middle;
     text-align:center;
 }
+.column_lightgrey {
+  background-color: #FEFEFE;
+}
+
 table {
     width:100%;
 }
