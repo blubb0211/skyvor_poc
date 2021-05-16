@@ -36,3 +36,25 @@ function expand_collapse_item(spanBlock, expandButton) {
         thisButton.innerHTML="+"; 
     }
 }
+function expandAll() {
+    var allElemsSpans = document.getElementsByClassName('left_nav_sub');
+    var allElemsButtons = document.getElementsByClassName('menu_expand');
+    var i;
+    for (i = 0; i < allElemsSpans.length; i++) {
+        allElemsSpans[i].style.display="block";
+    }
+    for (i = 0; i < allElemsButtons.length; i++) {
+        allElemsButtons[i].innerHTML="-";
+    }
+}
+function collapseAll() {
+    var allElemsSpans = document.getElementsByClassName('left_nav_sub');
+    var allElemsButtons = document.getElementsByClassName('menu_expand');
+    var i;
+    for (i = 0; i < allElemsSpans.length; i++) {
+        allElemsSpans[i].style.display="none";
+    }
+    for (i = 0; i < allElemsButtons.length; i++) {
+        allElemsButtons[i].innerHTML="+";
+    }
+}

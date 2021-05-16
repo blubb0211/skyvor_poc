@@ -230,6 +230,7 @@
     font-weight:bold;
     color:#FCFCFC;
     font-size:13pt;
+    display: inline-block;
 }
 .nav2_links a {
     font-weight:bold;
@@ -323,6 +324,10 @@
     display:block;
     font-size:14pt;
 }
+.left_header_sub {
+
+    font-size:9pt;
+}
 .left_nav {
     display:block;
     position:relative;
@@ -387,13 +392,31 @@
     margin-right:16px;
     z-index:2;
 }
+.menu_expand_empty {
+    position:relative;
+    border-width:1px;
+    border-style:solid;
+    border-color:#787878;
+    vertical-align:middle;
+    line-height:10px;
+    text-align:center;
+    color:#787878;
+    background-color:#EFEFEF;
+    width:10px;
+    height:10px;
+    font-size:8pt;
+    display:inline-block;
+    margin-bottom:4px;
+    margin-right:16px;
+    z-index:2;
+}
 .horizontal_line {
     height:1px;
     width:16px;
     background-color:#CDCDCD;
     display:block;
     position:absolute;
-    top:10px;
+    top:8px;
     left:29px;
 }.horizontal_line_sub {
     height:1px;
@@ -401,7 +424,7 @@
     background-color:#CDCDCD;
     display:block;
     position:absolute;
-    top:10px;
+    top:8px;
     left:30px;
 }
 .main_div_cell2 {
