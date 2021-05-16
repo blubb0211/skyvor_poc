@@ -15,7 +15,7 @@
             <div class="nav_left">
                 <span class="nav_left_span">
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="study">
                             <option value="STD00001">STD00001</option>
                             <option value="STD00001">STD00002</option>
@@ -24,7 +24,7 @@
                         </select>
                     </div>
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="site">
                             <option value="STD00001">All sites</option>
                             <option value="STD00001">SITE00001</option>
@@ -36,7 +36,7 @@
                         </select>
                     </div>
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="subject">
                             <option>0000001</option>
                             <option>0000002</option>
@@ -54,12 +54,12 @@
         <nav class="nav2">
             <div class="nav2_left">
                 <a href="overview.html" class="home_link">
-                    <font style="font-size:30pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:30pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
-                    <font style="font-size:13pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
+                    <font style="font-size:24pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:24pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
+                    <font style="font-size:10pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
                 </a>
             </div>
             <div class="nav2_right">
-                <span class="nav2_links"><a href="overview.html">VISIT PLAN</a></span><span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
+                <span class="nav2_links"><a href="overview.html">VIRTUAL CALL</a></span><span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
             </div>
         </nav>
         <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
@@ -76,19 +76,9 @@
             </div>
             <div class="main_div_cell_left" id="main_div_cell_left">
                     <span class="left_header"><font style="font-weight:bold;">Subject: </font>0000001</span>
-                    <div style="width:100%; height:1px; position:relative; display:block; background-color:#CACACA; margin-bottom:15px;"></div>
+                    <div style="width:100%; height:1px; position:relative; display:block; background-color:#CACACA; margin-bottom:12px;"></div>
                     <span class="left_nav">
                         <div class="straight_line"></div>
-                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_1" onclick="expand_collapse_item('sub_1','expand_1');" style="cursor:pointer;">+</div>Screening</span>
-                        <span class="left_nav_sub" style="display:none;" id="sub_1">
-                            <div class="straight_line_sub"></div>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
-                        </span>
                         <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_2" onclick="expand_collapse_item('sub_2','expand_2');" style="cursor:pointer;">+</div>Device monitoring</span>
                         <span class="left_nav_sub" style="display:none;" id="sub_2">
                             <div class="straight_line_sub"></div>
@@ -98,46 +88,44 @@
                             <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Activity measurements</span>
                             <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Health monitoring</span>
                         </span>
-                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_3" onclick="expand_collapse_item('sub_3','expand_3');" style="cursor:pointer;">+</div>Visit 1</span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_1" onclick="expand_collapse_item('sub_1','expand_1');" style="cursor:pointer;">+</div>Screening</span>
+                        <span class="left_nav_sub" style="display:none;" id="sub_1">
+                            <div class="straight_line_sub"></div>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Date of Inform Consent</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
+                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_3" onclick="expand_collapse_item('sub_3','expand_3');" style="cursor:pointer;">+</div>Day 1</span>
                         <span class="left_nav_sub" style="display:none;" id="sub_3">
                             <div class="straight_line_sub"></div>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Date of Enrollment</span>
                             <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand" id="expand_3_3" onclick="expand_collapse_item('sub_3_3','expand_3_3');" style="cursor:pointer;">+</div>Laboratory Tests</span>
+                            <span class="left_nav_sub" style="display:none;" id="sub_3_3">
+                                <div class="straight_line_sub"></div>
+                                <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Serum Pregnancy Test</span>
+                                <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Pharmacogenomics Blood Sampling</span>
+                            </span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Study Treatment / IP Dispensation</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Adverse Events</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Concomitant Medication</span>
                         </span>
-                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_4" onclick="expand_collapse_item('sub_4','expand_4');" style="cursor:pointer;">+</div>Visit 2</span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_4" onclick="expand_collapse_item('sub_4','expand_4');" style="cursor:pointer;">+</div>Visit 1</span>
                         <span class="left_nav_sub" style="display:none;" id="sub_4">
                             <div class="straight_line_sub"></div>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Date of Visit</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand" id="expand_4_3" onclick="expand_collapse_item('sub_4_3','expand_4_3');" style="cursor:pointer;">+</div>Laboratory Tests</span>
+                            <span class="left_nav_sub" style="display:none;" id="sub_4_3">
+                                <div class="straight_line_sub"></div>
+                                <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Hematology and Chemistry</span>
+                            </span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Study Treatment / IP Dispensation</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Adverse Events</span>
+                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Concomitant Medication</span>
                         </span>
-                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_5" onclick="expand_collapse_item('sub_5','expand_5');" style="cursor:pointer;">+</div>Visit 3</span>
-                        <span class="left_nav_sub" style="display:none;" id="sub_5">
-                            <div class="straight_line_sub"></div>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
-                        </span>
-                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_6" onclick="expand_collapse_item('sub_6','expand_6');" style="cursor:pointer;">+</div>End</span>
-                        <span class="left_nav_sub" style="display:none;" id="sub_6">
-                            <div class="straight_line_sub"></div>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Visit date</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Demographics</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Medical history</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Physical examination</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Vital signs</span>
-                            <span class="left_nav_elem_sub"><div class="horizontal_line_sub"></div><div class="menu_expand"></div>Inclusion / Exclusion</span>
-                        </span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_5" onclick="expand_collapse_item('sub_5','expand_5');" style="cursor:pointer;"></div>End of treatment</span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_6" onclick="expand_collapse_item('sub_6','expand_6');" style="cursor:pointer;"></div>Follow-up Visits</span>
+                        <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_7" onclick="expand_collapse_item('sub_7','expand_7');" style="cursor:pointer;"></div>End of Study</span>
                     </span>
                 <div class="minimizer" onclick="toggle_minimizer();">
                 &#9664;
@@ -152,25 +140,10 @@
                 <input type="text" name="keywordFilter" placeholder="Keyword filter"><br>
                 <table class="overview_table">
                     <tr>
-                        <th>Subject</th><th>Screening</th><th>Device Monitoring</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
+                        <th>Device Monitoring</th><th>Screening</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
                     </tr>
                     <tr>
-                        <td>Visit date</td><td><font class="font_tick">✓</font></td><td rowspan=100><font class="font_tick">✓</font></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Demographics</td><td><font class="font_tick">✓</font></td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Medical history</td><td><font class="font_tick">✓</font></td><td><font class="font_exclam">!</font></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Physical examination</td><td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Vital signs</td><td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Inclusion / Exclusion</td><td><font class="font_tick">✓</font></td><td><font class="font_cross">?</font></td><td></td><td></td><td></td>
+                        <td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td><font class="font_cross">?</font></td><td><font class="font_exclam">!</font></td><td><font class="font_exclam">!</font></td><td><font class="font_exclam">!</font></td>
                     </tr>
                 </table>
                 <div class="maximizer" id="maximizer" onclick="toggle_maximizer();">

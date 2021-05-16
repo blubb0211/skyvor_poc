@@ -15,7 +15,7 @@
             <div class="nav_left">
                 <span class="nav_left_span">
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="study">
                             <option value="STD00001">STD00001</option>
                             <option value="STD00001">STD00002</option>
@@ -24,7 +24,7 @@
                         </select>
                     </div>
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="site">
                             <option value="STD00001">All sites</option>
                             <option value="STD00001">SITE00001</option>
@@ -36,7 +36,7 @@
                         </select>
                     </div>
                     <div class="nav-select">
-                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:20px;margin-top:5px"></div>
+                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:16px;margin-top:4px"></div>
                         <select name="subject">
                             <option>Select subjects...</option>
                             <option>0000001</option>
@@ -55,17 +55,17 @@
         <nav class="nav2">
             <div class="nav2_left">
                 <a href="overview.html" class="home_link">
-                    <font style="font-size:30pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:30pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
-                    <font style="font-size:13pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
+                    <font style="font-size:24pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:24pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
+                    <font style="font-size:10pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
                 </a>
             </div>
             <div class="nav2_right">
-                <span class="nav2_links"><a href="overview.html">VISIT PLAN</a></span><span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
+                <span class="nav2_links"><a href="overview.html">VIRTUAL CALL</a></span><span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
             </div>
         </nav>
         <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
         <span class="nav_dropdown_span_inactive">No pending notifications</span>
-        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <div style="width:200px; height:1px; position:relative; display:block; background-color:white;"></div>
         <span class="nav_dropdown_span">Settings</span>
         <span class="nav_dropdown_span">Help</span>
         <span class="nav_dropdown_span"><a href="login.html">Logout</a></span>
@@ -79,15 +79,20 @@
                     <span class="main_header_line_2">Subjects</span>
                     <div style="width:100%; height:1px; position:relative; display:block; background-color:black; margin-bottom:0px;"></div>
                 </header>
-                <input type="text" name="keywordFilter" placeholder="Keyword filter"><br>
+                <table>
+                    <tr>
+                        <td><input type="text" name="keywordFilter" placeholder="Keyword filter"><br></td>
+                        <td> Test </td>
+                    </tr>
+                </table>
                 <table class="overview_table">
+                    <tr>
+                        <th>Site</th><th>Subject</th><th>Status</th><th>Device Monitoring</th><th>Screening</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
+                    </tr>
                     <colgroup>
                         <col class="column_lightgrey" span="3">
                         <col>
                     </colgroup>
-                    <tr>
-                        <th>Site</th><th>Subject</th><th>Status</th><th>Device Monitoring</th><th>Screening</th><th>Visit 1</th><th>Visit 2</th><th>Visit 3</th><th>End</th>
-                    </tr>
                     <tr>
                         <td>SITE00001</td><td><a href="subject_view.html">0000001</a></td><td>Screening</td><td><font class="font_cross">?</font></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>

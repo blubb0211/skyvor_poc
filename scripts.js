@@ -15,7 +15,7 @@ function toggle_minimizer() {
     var maximizer = document.getElementById("maximizer");
     elem_left.style.display="none";
     maximizer.style.display="block";
-    elem_right.style.paddingLeft="20px";
+    elem_right.style.paddingLeft="16px";
 }
 function toggle_maximizer() {
     var elem_left = document.getElementById("main_div_cell_left");
