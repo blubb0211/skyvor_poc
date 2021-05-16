@@ -444,6 +444,13 @@
     margin-bottom:20px;
     text-align:left;
 }
+.legend_block {
+    width:120px;
+    display:inline-block;
+    font-size:9pt;
+    /*border: 1px solid #000;*/
+    
+}
 .main_header_line_1 {
     display:block;
     font-size:14pt;
