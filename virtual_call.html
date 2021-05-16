@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SkyvorMed Medical Device Data Capture Cloud</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="cover_screen_dropdown" id="cover_screen_dropdown" onclick="toggle_dropdown();"></div>
+	<header>
+		<nav class="top_nav">
+            <div class="nav_left">
+                <span class="nav_left_span">
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/book_white.png" style="width:16px;margin-top:4px"></div>
+                        <select name="study">
+                            <option value="STD00001">STD00001</option>
+                            <option value="STD00001">STD00002</option>
+                            <option value="STD00001">STD00003</option>
+                            <option value="STD00001">STD00004</option>
+                        </select>
+                    </div>
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/hospital_white.png" style="width:16px;margin-top:4px"></div>
+                        <select name="site">
+                            <option value="STD00001">All sites</option>
+                            <option value="STD00001">SITE00001</option>
+                            <option value="STD00001">SITE00002</option>
+                            <option value="STD00001">SITE00003</option>
+                            <option value="STD00001">SITE00004</option>
+                            <option value="STD00001">SITE00005</option>
+                            <option value="STD00001">SITE00006</option>
+                        </select>
+                    </div>
+                    <div class="nav-select">
+                        <div class="nav_symbol"><img src="icons_white/patient_file_white.png" style="width:16px;margin-top:4px"></div>
+                        <select name="subject">
+                            <option>0000001</option>
+                            <option>0000002</option>
+                            <option>0000003</option>
+                            <option>0000004</option>
+                            <option>0000005</option>
+                        </select>
+                    </div>
+                </span>
+            </div>
+            <div class="nav_right">
+                <span class="nav_right_span"><div class="nav_name" onclick="toggle_dropdown();">John Doe <font style="font-style:italic; font-weight: normal;">(Study manager)</font></div></span>
+            </div>
+		</nav>
+        <nav class="nav2">
+            <div class="nav2_left">
+                <a href="overview.html" class="home_link">
+                    <font style="font-size:24pt; font-weight:bold; color:white;">SKYVOR</font><font style="font-size:24pt; font-weight:bold; color:#A6D4FF;">MEDICAL</font><br>
+                    <font style="font-size:10pt; color:#DEDEDE;">Medical Device Data Capture Cloud</font>
+                </a>
+            </div>
+            <div class="nav2_right">
+                <span class="nav2_links_selected"><a href="virtual_call.html">VIRTUAL CALL</a></span><span class="nav2_links"><a href="overview.html">SUBJECTS</a></span><span class="nav2_links">REPORTS</span><span class="nav2_links">DOCUMENTS</span>
+            </div>
+        </nav>
+        <div class="nav_dropdown" id="nav_dropdown" style="display:none;">
+        <span class="nav_dropdown_span_inactive">No pending notifications</span>
+        <div style="width:250px; height:1px; position:relative; display:block; background-color:white;"></div>
+        <!--
+        <span class="nav_dropdown_span">Settings</span>
+        <span class="nav_dropdown_span">Help</span>
+        -->
+        <span class="nav_dropdown_span"><a href="login.html">Logout</a></span>
+        </div>
+	</header>
+	<main>
+        <div class="main_div2">
+            <div class="main_div_cell_padding_left">
+            </div>
+            <div class="main_div_cell_left" id="main_div_cell_left">
+                    <span class="left_header"><font style="font-weight:bold;">Status: </font>Online <img src="phone_online.png" style="width:15px">
+                        <!--
+                        <br>
+                        <span class="left_header_sub" onclick="expandAll()" style="cursor:pointer;"><div class="menu_expand_empty" style="cursor:pointer;">+</div>Expand all</span><br>
+                        <span class="left_header_sub" onclick="collapseAll()" style="cursor:pointer;"><div class="menu_expand_empty" style="cursor:pointer;">-</div>Collapse all</span>
+                        -->
+                    </span>
+                    <div style="width:100%; height:1px; position:relative; display:block; background-color:#CACACA; margin-bottom:12px;"></div>
+                    <span class="left_nav">
+                        <span class="left_nav_elem_sub"><img src="phone_online.png" style="width:12px"> <b>0000001</b></span>
+                        <span class="left_nav_elem_sub"><img src="phone_offline.png" style="width:12px"> 0000002</span>
+                        <span class="left_nav_elem_sub"><img src="phone_offline.png" style="width:12px"> 0000003</span>
+                        <span class="left_nav_elem_sub"><img src="phone_offline.png" style="width:12px"> 0000004</span>
+                        <span class="left_nav_elem_sub"><img src="phone_offline.png" style="width:12px"> 0000005</span>
+                        <span class="left_nav_elem_sub"><img src="phone_offline.png" style="width:12px"> 0000006</span>
+
+                    </span>
+                <div class="minimizer" onclick="toggle_minimizer();">
+                &#9664;
+                </div>
+            </div>
+            <div class="main_div_cell_right" id="main_div_cell_right">
+                <header class="main_header">
+                    <span class="main_header_line_1">Virtual Call</span>
+                    <span class="main_header_line_2">0000001</span>
+                    <div style="width:100%; height:1px; position:relative; display:block; background-color:black; margin-bottom:0px;"></div>
+                </header>
+                <div class="main_div_cell_right_call_window"><div class="call_elems"><img src="call_menu_dummy.png" style="width:350px;margin-top:8px;"></div></div>
+                <div class="maximizer" id="maximizer" onclick="toggle_maximizer();">
+                &#9654;
+                </div>
+            </div>
+            <div class="main_div_cell_right_margin"></div>
+        </div>
+    </main>
+
+	<footer>
+		<p>Copyright 2021 KaivorMed</p>
+	</footer>
+
+</body>
+
+</html>
+
