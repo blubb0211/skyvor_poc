@@ -6,6 +6,11 @@
 	<title>SkyvorMed Medical Device Data Capture Cloud</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
+    <!-- HH scripts -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="date-de-CH.js"></script>
+    <!-- <script type="text/javascript" src="parse.js"></script> -->
+    <!-- end of HH scripts -->
 </head>
 
 <body>
@@ -82,16 +87,13 @@
                         <span class="left_header_sub" onclick="collapseAll()" style="cursor:pointer;"><div class="menu_expand_empty" style="cursor:pointer;">-</div>Collapse all</span>
                     </span>
                     <div style="width:100%; height:1px; position:relative; display:block; background-color:#CACACA; margin-bottom:12px;"></div>
-
                     <span class="left_nav">
                         <div class="straight_line"></div>
                         <!-- HH -->
-                        <span class="left_nav_elem" 
-                              onclick="window.location='H_device_view.html'"
-                              style="cursor:pointer;">
+                        <span class="left_nav_elem">
                             <div class="horizontal_line"></div>
                             <div class="menu_expand_empty" id="expand_2"></div>
-                        Device monitoring
+                        <a>Device monitoring</a>
                         </span>
                         <!-- HH end -->
                         <span class="left_nav_elem"><div class="horizontal_line"></div><div class="menu_expand" id="expand_1" onclick="expand_collapse_item('sub_1','expand_1');" style="cursor:pointer;">+</div>Screening</span>
@@ -139,31 +141,135 @@
             </div>
             <div class="main_div_cell_right" id="main_div_cell_right">
                 <header class="main_header">
-                    <span class="main_header_line_1">Subject</span>
-                    <span class="main_header_line_2">0000001</span>
-                    <div style="width:100%; height:1px; position:relative; display:block; background-color:black; margin-bottom:0px;"></div>
+                 
+                <!-- start HH checkbox -->
+                <table style="width:800px;">
+                    <tr>
+                        <th style="border-width: 0px; text-align: left;">Plots</th>
+                        <th style="border-width: 0px; text-align: left;">
+                            <table>
+                                <tr>
+                                    <td> <input type="checkbox" 
+                                               id="check_filter" 
+                                               onclick="plotAll()"
+                                               style="height: 18px;"> 
+                                    </td>
+                                    <td>Filter Date</td>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+                    <tr>
+                        <!-- plot checkbox -->
+                        <td style="width: 50%">
+                            <table>
+                                <tr >
+                                    <td >
+                                        <input type="checkbox" 
+                                               id="hr" 
+                                               name="plot1" 
+                                               value="hr" 
+                                               onclick="plotAll()"
+                                               style="height: 16px;"> 
+                                    </td>
+                                    <td>
+                                        <label for="plot1"> Heart Rate</label>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td>
+                                        <input type="checkbox" id="steps" name="plot2" value="steps" onclick="plotAll()" style="height: 16px;">
+                                    </td>
+                                    <td>
+                                        <label for="plot2"> Activity</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <input type="checkbox" id="spo2" name="plot3" value="spo2" onclick="plotAll()" style="height: 16px;"> 
+                                    </td>
+                                    <td>
+                                        <label for="plot3"> Blood O2 amount</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!-- calendar -->
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>starting date</td>
+                                    <td>
+                                        <input type="date" id="filter-start" name="filter-start" max="2021-05-18" onchange="plotAll()">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>ending date</td>
+                                    <td>
+                                        <input type="date" id="filter-end" name="filter-end" onchange="plotAll()">
+                                    </td>
+                                </tr>     
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- HH end of div -->
+
+
+            <div style="width:100%; height:1px; position:relative; display:block; background-color:black; margin-bottom:0px;"></div>
                 </header>
-                <table style="width:100%">
-                    <tr>
-                        <td><input type="text" name="keywordFilter" placeholder="Keyword filter"></td>
-                        <td style="text-align:right">
-                            <div class="legend_block">
-                                <table style="border:0px">
-                                    <tr><td style="width:20px;text-align:center"><font class="font_tick">✓</font></td><td style="text-align:left">Complete</td></tr>
-                                    <tr><td style="width:20px;text-align:center"><font class="font_cross">?</font></td><td style="text-align:left">Open Queries</td></tr>
-                                    <tr><td style="width:20px;text-align:center"><font class="font_exclam">!</font></td><td style="text-align:left">Incomplete</td></tr>
-                                </table>
-                            </div></td>
-                    </tr>
-                </table>
-                <table class="overview_table">
-                    <tr>
-                        <th>Device Monitoring</th><th>Screening</th><th>Day 1</th><th>Visit 1</th><th>End of treatment</th><th>Follow-up Visits</th><th>End of Study</th>
-                    </tr>
-                    <tr>
-                        <td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td><font class="font_tick">✓</font></td><td><font class="font_cross">?</font></td><td><font class="font_exclam">!</font></td><td><font class="font_exclam">!</font></td><td><font class="font_exclam">!</font></td>
-                    </tr>
-                </table>
+                <!-- HH add plots -->
+                <div id="div_plot"></div>
+                <script type="text/javascript" src="plotH.js"></script>
+                <script type="text/javascript" src="fakeData.js"></script>
+                <script type="text/javascript"> 
+
+                // all traces
+                const numPoints = 200;
+                const interval = 15; // min
+                var allTraces = [];
+                allTraces['Heart Rate'] = getTimeTrace(numPoints, interval, 70, 100, 1,'Heart Rate');
+                allTraces['Oxygen'] = getTimeTrace(numPoints, interval, 80, 90, 2, 'Blood O2');
+                allTraces['Activity'] = getBarplot(numPoints, interval, 60, 95, 10,'Steps');
+                
+                setCalendar();       
+
+                function plotAll(){
+                    var tracesToPlot = [];
+                    // first decide what traces to plot
+                    tracesToPlot = runFilter();
+                    // debugger;
+
+                    // get all traces
+                    var output = getAll(tracesToPlot);
+                    var allPlots = output['allPlots'];
+                    var layout = output['layout'];
+                    
+                    // plot
+                    if(allChecked()['num']>0){
+                        Plotly.newPlot('div_plot', allPlots, layout);
+                    } else {  // if no plot selected
+                        document.getElementById("div_plot").innerHTML="";
+                    }
+                    
+                }
+
+                function runFilter(){
+                    var traces = [];
+                    if(document.getElementById("check_filter").checked){
+                        // use filtered traces
+                        traces = filterDate(allTraces);
+                    } else {
+                        // use whole traces
+                        Object.assign(traces, allTraces);
+                    }
+                    return traces;
+                }
+                </script>
+
+                <!-- end of HH plots -->
+
                 <div class="maximizer" id="maximizer" onclick="toggle_maximizer();">
                 &#9654;
                 </div>
