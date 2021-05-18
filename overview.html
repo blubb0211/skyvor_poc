@@ -6,6 +6,7 @@
 	<title>SkyvorMed Medical Device Data Capture Cloud</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
+    <script type="text/javascript" src="sortTable.js"></script>
 </head>
 
 <body>
@@ -83,7 +84,14 @@
                 </header>
                 <table style="width:100%">
                     <tr>
-                        <td><input type="text" name="keywordFilter" placeholder="Keyword filter"></td>
+                        <!-- HH add filter -->
+                        <td>
+                            <input type="text" 
+                            name="keywordFilter" 
+                            id = "keywordFilter"
+                            placeholder="enter Keyword"
+                            onchange="filterKeywords()">
+                        </td>
                         <td style="text-align:right">
                             <div class="legend_block">
                                 <table style="border:0px">
@@ -96,7 +104,8 @@
                 </table>
                 <table class="overview_table">
                     <tr>
-                        <th>Site</th><th>Subject</th><th>Status</th><th>Device Monitoring</th><th>Screening</th><th>Day 1</th><th>Visit 1</th><th>End of treatment</th><th>Follow-up Visits</th><th>End of Study</th>
+                        <!-- HH add sortTable -->
+                        <th onclick="sortTable(0)">Site</th><th onclick="sortTable(1)">Subject</th><th onclick="sortTable(2)">Status</th><th>Device Monitoring</th><th>Screening</th><th>Day 1</th><th>Visit 1</th><th>End of treatment</th><th>Follow-up Visits</th><th>End of Study</th>
                     </tr>
                     <colgroup>
                         <col class="column_lightgrey" span="3">
